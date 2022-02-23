@@ -5,6 +5,6 @@ import Member from './components/Member';
 
 app.initializers.add('zerosonesfun-flarum-member', () => {
   extend(ForumApplication.prototype, 'mount', () => {
-      m.mount(document.body.appendChild, Member);
+    m.mount(document.body.appendChild, Member);
   });
 });
