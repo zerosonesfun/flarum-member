@@ -1667,6 +1667,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flarum/prettier-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@flarum/prettier-config@npm:1.0.0"
+  checksum: 2035b97dcd02f2ebcb9f0f88111adbf176fbb31132c4e0a2a5387cec14619ef0f8ac3418c14a0730de1d14765b2bc7c53aa3eea6b28949da93ceb3c1c229195a
+  languageName: node
+  linkType: hard
+
 "@jridgewell/resolve-uri@npm:^3.0.3":
   version: 3.0.5
   resolution: "@jridgewell/resolve-uri@npm:3.0.5"
@@ -1725,6 +1732,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jquery@npm:^3.5.5":
+  version: 3.5.13
+  resolution: "@types/jquery@npm:3.5.13"
+  dependencies:
+    "@types/sizzle": "*"
+  checksum: cb4e6aacaf36905049d5ac93da1fabed17da285fafe38c88feba89d7c9912e108c934ea05c908b87ae199f2830e5e002a72d0cc8aaef4a33539581d0a7a6abe8
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.8":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -1739,10 +1755,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mithril@npm:^2.0.7":
+  version: 2.0.9
+  resolution: "@types/mithril@npm:2.0.9"
+  checksum: be35d2843ad5edbd24d135286a41e208f19d21194bf3f415527681cd511b39c3f4b05be1ab12b54bce9971eea8a5d824c0441c3863c05ac93fa596c1b7aaf8b5
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 17.0.20
   resolution: "@types/node@npm:17.0.20"
   checksum: 50cdbd3c4c93f117f95e7c11ee28540f388500d6496e9efc8610f7e27839cb1fcf6c2479cac1dcd00fcc4658029a41201cc3294ae0d42e24ffcc71477a44191c
+  languageName: node
+  linkType: hard
+
+"@types/sizzle@npm:*":
+  version: 2.3.3
+  resolution: "@types/sizzle@npm:2.3.3"
+  checksum: 586a9fb1f6ff3e325e0f2cc1596a460615f0bc8a28f6e276ac9b509401039dd242fa8b34496d3a30c52f5b495873922d09a9e76c50c2ab2bcc70ba3fb9c4e160
+  languageName: node
+  linkType: hard
+
+"@types/throttle-debounce@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@types/throttle-debounce@npm:2.1.0"
+  checksum: 70e219d000595108fce0dc624c8296e37cdb174b528e09c939da18e619da1c6df86b088659f5eb93cb146bd5fe2954597823c2e1f0849dc8f6585d87cbbf71b7
   languageName: node
   linkType: hard
 
@@ -1948,7 +1985,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zerosonesfun/flarum-member@workspace:."
   dependencies:
+    "@flarum/prettier-config": ^1.0.0
+    flarum-tsconfig: ^1.0.2
     flarum-webpack-config: ^2.0.0
+    prettier: ^2.5.1
     webpack: ^5.69.1
     webpack-cli: ^4.9.2
   languageName: unknown
@@ -2282,6 +2322,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.10.4":
+  version: 1.10.7
+  resolution: "dayjs@npm:1.10.7"
+  checksum: a0a4ca95abaa03d0702161dc2c35d16121188e342f5052b9c61cdf784dab68af766f477c04f87f71c6af666fd4d13db9b9853b87265850d6093b7b04e1bb1cd7
+  languageName: node
+  linkType: hard
+
 "debug@npm:^4.1.0, debug@npm:^4.1.1":
   version: 4.3.1
   resolution: "debug@npm:4.3.1"
@@ -2474,6 +2521,18 @@ __metadata:
     locate-path: ^5.0.0
     path-exists: ^4.0.0
   checksum: 4c172680e8f8c1f78839486e14a43ef82e9decd0e74145f40707cc42e7420506d5ec92d9a11c22bd2c48fb0c384ea05dd30e10dd152fefeec6f2f75282a8b844
+  languageName: node
+  linkType: hard
+
+"flarum-tsconfig@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "flarum-tsconfig@npm:1.0.2"
+  dependencies:
+    "@types/jquery": ^3.5.5
+    "@types/mithril": ^2.0.7
+    "@types/throttle-debounce": ^2.1.0
+    dayjs: ^1.10.4
+  checksum: 65a59571ac042b442effc96d979c73365da153c34c489c698b2974a2d9fea877a8acf4030dad6becc0ecaecb6b296f598db2e9badd33a9f31eee6245d0301e92
   languageName: node
   linkType: hard
 
@@ -2986,6 +3045,15 @@ __metadata:
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "prettier@npm:2.5.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
   languageName: node
   linkType: hard
 
