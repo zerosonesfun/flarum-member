@@ -1,3 +1,4 @@
+import app from 'flarum/forum/app';
 import { extend } from 'flarum/common/extend';
 import ForumApplication from 'flarum/common/ForumApplication';
 import Member from './components/Member';
